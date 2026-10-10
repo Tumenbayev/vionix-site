@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каталог — VIONIX</title>
+<meta name="description" content="Весь каталог добавок VIONIX: фильтр по цели, поиск и сортировка по цене. Покупка на Kaspi.">
+<meta name="theme-color" content="#0B0D0C">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="vx">
+
+<div class="glow glow-1" aria-hidden="true"></div>
+<div class="glow glow-2" aria-hidden="true"></div>
+
+<header class="wrap header">
+  <a class="logo" href="index.html" aria-label="VIONIX — на главную">
+    <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true" fill="none"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2BD982"/><stop offset="1" stop-color="#19B4D8"/></linearGradient></defs><path d="M5 6 L17 29 L29 6" stroke="url(#lg1)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 20 C17 12 21 7 28 5 C27 12 23 17 17 20 Z" fill="url(#lg1)" opacity=".9"/></svg>
+    <span class="logo-word">VIONIX</span>
+  </a>
+  <nav class="nav" aria-label="Основная навигация">
+    <a class="nav-a" href="index.html">Главная</a>
+    <a class="nav-a" href="catalog.html" aria-current="page">Каталог</a>
+    <a class="nav-a" href="index.html#faq">Вопросы</a>
+  </nav>
+  <a class="btn btn-primary btn-sm" data-kaspi-all href="https://kaspi.kz/shop/search/?text=vionix" target="_blank" rel="noopener">Купить на Kaspi</a>
+</header>
+
+<main>
+<section id="top" class="wrap" style="padding-top:40px;padding-bottom:20px">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <a href="index.html">Главная</a><span aria-hidden="true">/</span><span aria-current="page" style="color:#EEF2EF">Каталог</span>
+  </nav>
+  <div class="cat-head">
+    <div class="cat-title">
+      <h1 class="h-xl">Каталог <span class="grad">VIONIX</span></h1>
+      <p id="shown-text" aria-live="polite">Вся линейка</p>
+    </div>
+    <div class="search-box">
+      <label for="vx-search" class="sr">Поиск по каталогу</label>
+      <svg class="search-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A9B5AF" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="vx-search" class="search" type="search" placeholder="Найти: магний, омега, инозитол…" autocomplete="off">
+    </div>
+  </div>
+</section>
+
+<section id="catalog" class="wrap" style="padding-top:24px;padding-bottom:40px">
+  <div class="toolbar">
+    <div class="tabs" id="tabs" role="group" aria-label="Фильтр по цели"></div>
+    <div class="sorts" id="sorts" role="group" aria-label="Сортировка"></div>
+  </div>
+  <div class="empty" id="empty" hidden>
+    <h2>Ничего не нашлось</h2>
+    <p>Попробуйте другой запрос или сбросьте фильтры.</p>
+    <button type="button" class="btn btn-ghost" id="reset">Сбросить фильтры</button>
+  </div>
+  <div class="grid" id="catalog-grid"></div>
+</section>
+
+<section class="wrap cta-sec">
+  <div class="cta">
+    <svg class="cta-mark" aria-hidden="true" width="420" height="420" viewBox="0 0 34 34" fill="none"><path d="M5 6 L17 29 L29 6" stroke="#04140D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 20 C17 12 21 7 28 5 C27 12 23 17 17 20 Z" fill="#04140D"/></svg>
+    <h2>Вся линейка VIONIX — на Kaspi.kz</h2>
+    <a class="btn btn-dark" data-kaspi-all href="https://kaspi.kz/shop/search/?text=vionix" target="_blank" rel="noopener">Смотреть все продукты
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-top">
+    <div class="footer-about">
+      <a class="logo" href="index.html" aria-label="VIONIX — на главную">
+        <svg width="32" height="32" viewBox="0 0 34 34" aria-hidden="true" fill="none"><path d="M5 6 L17 29 L29 6" stroke="#0E8F5A" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 20 C17 12 21 7 28 5 C27 12 23 17 17 20 Z" fill="#0E7FA0"/></svg>
+        <span class="logo-word">VIONIX</span>
+      </a>
+      <p>Премиальные добавки для энергии и здоровья.</p>
+    </div>
+    <nav class="footer-col" aria-label="Разделы сайта">
+      <span class="footer-h">Разделы</span>
+      <a class="foot-a" href="index.html">Главная</a>
+      <a class="foot-a" href="catalog.html">Каталог</a>
+      <a class="foot-a" href="index.html#faq">Частые вопросы</a>
+    </nav>
+    <nav class="footer-col" aria-label="Где купить и связаться">
+      <span class="footer-h">Связь и покупка</span>
+      <a class="foot-a" data-kaspi-all href="https://kaspi.kz/shop/search/?text=vionix" target="_blank" rel="noopener">Kaspi.kz</a>
+      <a class="foot-a" href="[ВАША ССЫЛКА WHATSAPP]">WhatsApp</a>
+      <a class="foot-a" href="[ВАША ССЫЛКА INSTAGRAM]">Instagram</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>БАД. Не является лекарственным средством. Перед применением проконсультируйтесь со специалистом.</span>
+    <span>© 2026 VIONIX</span>
+  </div>
+</footer>
+
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
